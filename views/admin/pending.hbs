@@ -1,0 +1,296 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Car Serving a Auto Mobile Category Category Bootstrap Responsive Template | About :: W3layouts</title>
+  <!-- Template CSS -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="stylesheets/style-starter.css">
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+  <!-- Template CSS -->
+  
+</head>
+
+<body>
+ 
+   <!-- about breadcrumb -->
+   <section class="w3l-about-breadcrumb position-relative text-center">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+      <div class="container py-lg-5 py-3">
+        <h2 class="title">Request</h2>
+        <ul class="breadcrumbs-custom-path mt-2">
+          <li><a href="#url">Home</a></li>
+          <li class="active"><span class="fa fa-angle-double-right mx-2" aria-hidden="true"></span>Pending Requests </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- //about breadcrumb -->
+  <!-- /content-6-->
+	<section class="w3l-content-6">
+
+	</section>
+	<!-- //content-6-section -->
+
+	<!--//content-5-->
+	<section class="intro">
+  <div class="bg-image h-100" style="background-color: #f5f7fa;">
+    <div class="mask d-flex align-items-center h-100">
+      <div class="container">
+         {{!-- <a href="/admin/adduser" class="btn btn-danger mr-auto">Add</a> --}}
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body p-0">
+                <div class="table-responsive table-scroll" data-mdb-perfect-scrollbar="true" style="position: relative; height: 700px">
+                  <table id="pendingtable" class="table table-striped mb-0">
+                    <thead style="background-color: #be0808;">
+                      <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Method</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Options</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {{#each request}}
+                      <tr>
+                        <td>{{this.Date}}</td>
+                         <td>{{this.Name}}</td>
+                        <td>{{this.Phone}}</td>
+                        <td>{{this.Email}}</td>
+                        <td>{{this.Total}}</td>
+                        <td>ONLINE</td>
+                        <td>{{this.status}}</td>
+                        {{!-- <td>{{this.userid}}</td> --}}
+                        <td>
+                           <a href="/admin/viewmore/{{this.userid}}" class="btn btn-danger">View</a>
+                            <a href="/admin/accept/{{this.userid}}" class="btn btn-danger">Accept</a>
+                            <a href="/admin/reject/{{this._id}}" onclick="return confirm('Are You Want to Reject this User {{this.Name}}')" class="btn btn-danger">Reject</a>
+                       
+                       
+                       
+                        </td>
+                      </tr>
+                      {{/each}}
+                     
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  let table = new DataTable('#pendingtable', {
+    // options
+});
+</script>
+
+<style>
+  html,
+body,
+.intro {
+  height: 100%;
+}
+
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+thead th {
+  color: #fff;
+}
+
+.card {
+  border-radius: .5rem;
+}
+
+.table-scroll {
+  border-radius: .5rem;
+}
+
+.table-scroll table thead th {
+  font-size: 1.25rem;
+}
+thead {
+  top: 0;
+  position: sticky;
+}
+</style>
+	<!-- team -->
+  <!-- footer-66 -->
+  <footer class="w3l-footer-66">
+    <section class="footer-inner-main">
+      <div class="footer-hny-grids py-5">
+        <div class="container py-lg-4">
+          <div class="text-txt">
+            <div class="right-side">
+              <div class="row sub-columns">
+                <div class="col-lg-4 col-md-6 sub-one-left pr-lg-4">
+                  <h2><a class="navbar-brand" href="index.html">
+                    <span>T</span>uk<span>T</span>uk
+                  </a></h2>
+                  <!-- if logo is image enable this   
+										<a class="navbar-brand" href="#index.html">
+											<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+										</a> -->
+                  <p class="pr-lg-4">We are here to Provide Auto Service For Your Needs at your Fingertips. </p>
+                  <div class="columns-2">
+                    <ul class="social">
+                      <li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#github"><span class="fa fa-github" aria-hidden="true"></span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 sub-one-left">
+                  <h6>Our Services</h6>
+    <div class="mid-footer-gd sub-two-right">
+
+                    <ul>
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span> About</a>
+                      </li>
+                
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span>Help
+                          </a>
+                      </li>
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span>Career</a></li>
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span>Contact US</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 sub-one-left">
+                  <h6>Contact Info</h6>
+                  <div class="sub-contact-info">
+                    <p>Address: Alappuzha, Kerala, India.</p>
+                    <p class="my-3">Phone: <strong><a href="tel:+916238141438">+91 6238141438</a></strong></p>
+                    <p>E-mail:<strong> <a href="mailto:autobros@gmail.com.com">tuktukmallu@gmail.com</a></strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="below-section">
+        <div class="container">
+          <div class="copyright-footer">
+            <div class="columns text-lg-left">
+              <p>© 2023 AutoBros. All rights reserved | Powered by <a href="#">Adithyan</a></p>
+            </div>
+            <ul class="columns text-lg-right">
+              <li><a href="#">Privacy Policy</a>
+              </li>
+              <li>|</li>
+              <li><a href="#">Terms Of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <!-- move top -->
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-long-arrow-up" aria-hidden="true"></span>
+      </button>
+      <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction()
+        };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+          } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <!-- /move top -->
+
+    </section>
+  </footer>
+  <!--//footer-66 -->
+  <!-- Template JavaScript -->
+  <script src="/javascripts/jquery-3.3.1.min.js"></script>
+  <script src="/javascripts/theme-change.js"></script>
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+
+  <script src="/javascripts/bootstrap.min.js"></script>
+
+</body>
+
+</html>

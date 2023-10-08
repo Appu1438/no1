@@ -1,0 +1,354 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Car Serving a Auto Mobile Category Category Bootstrap Responsive Template | Services :: W3layouts</title>
+  <!-- Template CSS -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <!-- Template CSS -->
+  
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="stylesheets/style-starter.css">
+</head>
+
+<body>
+ 
+  <!--/header-->
+   <!-- about breadcrumb -->
+   <section class="w3l-about-breadcrumb position-relative text-center">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+      <div class="container py-lg-5 py-3">
+        <h2 class="title">Edit Profile</h2>
+        <ul class="breadcrumbs-custom-path mt-2">
+          <li><a href="#url">Home</a></li>
+          <li class="active"><span class="fa fa-angle-double-right mx-2" aria-hidden="true"></span>Edit Profile</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+	<section class="login">
+		<div class="login_box">
+			<div class="left">
+				<div class="top_link"><a href="/"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Return home</a></div>
+				<div class="contact">
+                    
+					<form action="/editprofile/{{profile._id}}" method="post">
+						<h3>Edit</h3>
+						<input type="text" name="Name" required="" value="{{profile.Name}}" placeholder="Full Name">
+                        <input type="Email" name="Email" required="" value="{{profile.Email}}" placeholder="Email">
+                        <input type="text" name="Phone" required="" value="{{profile.Phone}}" placeholder="Phone">
+                        <input type="text" name="Address" required="" value="{{profile.Address}}" placeholder="Address">
+                        <input type="text" name="Pincode" required="" value="{{profile.Pincode}}" placeholder="Pinocde">
+						{{!-- <input type="text" name="Pass" required="" placeholder="Password"> --}}
+                        {{!-- <a href="/login" class="mt-1">Already have an Account?</a> --}}
+						<button type="submit" class="submit">Update</button>
+					</form>
+                    
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-text">
+					{{!-- <h2>LONYX</h2>
+					<h5>A UX BASED CREATIVE AGENCEY</h5> --}}
+				</div>
+				<div class="right-inductor"><img src="https://lh3.googleusercontent.com/fife/ABSRlIoGiXn2r0SBm7bjFHea6iCUOyY0N2SrvhNUT-orJfyGNRSMO2vfqar3R-xs5Z4xbeqYwrEMq2FXKGXm-l_H6QAlwCBk9uceKBfG-FjacfftM0WM_aoUC_oxRSXXYspQE3tCMHGvMBlb2K1NAdU6qWv3VAQAPdCo8VwTgdnyWv08CmeZ8hX_6Ty8FzetXYKnfXb0CTEFQOVF4p3R58LksVUd73FU6564OsrJt918LPEwqIPAPQ4dMgiH73sgLXnDndUDCdLSDHMSirr4uUaqbiWQq-X1SNdkh-3jzjhW4keeNt1TgQHSrzW3maYO3ryueQzYoMEhts8MP8HH5gs2NkCar9cr_guunglU7Zqaede4cLFhsCZWBLVHY4cKHgk8SzfH_0Rn3St2AQen9MaiT38L5QXsaq6zFMuGiT8M2Md50eS0JdRTdlWLJApbgAUqI3zltUXce-MaCrDtp_UiI6x3IR4fEZiCo0XDyoAesFjXZg9cIuSsLTiKkSAGzzledJU3crgSHjAIycQN2PH2_dBIa3ibAJLphqq6zLh0qiQn_dHh83ru2y7MgxRU85ithgjdIk3PgplREbW9_PLv5j9juYc1WXFNW9ML80UlTaC9D2rP3i80zESJJY56faKsA5GVCIFiUtc3EewSM_C0bkJSMiobIWiXFz7pMcadgZlweUdjBcjvaepHBe8wou0ZtDM9TKom0hs_nx_AKy0dnXGNWI1qftTjAg=w1920-h979-ft" alt=""></div>
+			</div>
+		</div>
+	</section>
+    <style>img{
+	width: 100%;
+}
+.login {
+    height: 1000px;
+    width: 99%;
+    background:rgb(225, 224, 224);
+    position: relative;
+}
+.login_box {
+  margin-left: 1%;
+    width: 95%;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+.login_box .left{
+  width: 60%;
+  height: 100%;
+  padding: 25px 25px;
+  
+}
+.login_box .right{
+  width: 300px;
+  height: 70%  
+}
+.left .top_link a {
+    color: #452A5A;
+    font-weight: 400;
+}
+.left .top_link{
+  height: 20px
+}
+.left .contact{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+.left h3{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.left input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #4f30677d;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+.left{
+	background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+    background: #b91802;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+
+
+
+.right {
+	background:url(../image/3.jpg);
+	color: #fff;
+	position: relative;
+  
+}
+
+.right .right-text{
+  height: 100%;
+  position: relative;
+  transform: translate(0%, 45%);
+}
+.right-text h2{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.right-text h5{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.right .right-inductor{
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background: #fff0;
+  left: 50%;
+  bottom: 70px;
+  transform: translate(-50%, 0%);
+}
+.top_link img {
+    width: 28px;
+    padding-right: 7px;
+    margin-top: -3px;
+}
+
+
+
+</style>
+
+
+
+
+
+    <footer class="w3l-footer-66">
+    <section class="footer-inner-main">
+      <div class="footer-hny-grids py-5">
+        <div class="container py-lg-4">
+          <div class="text-txt">
+            <div class="right-side">
+              <div class="row sub-columns">
+                <div class="col-lg-4 col-md-6 sub-one-left pr-lg-4">
+                  <h2><a class="navbar-brand" href="index.html">
+                    <span>T</span>uk<span>T</span>uk
+                  </a></h2>
+                  <!-- if logo is image enable this   
+										<a class="navbar-brand" href="#index.html">
+											<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+										</a> -->
+                  <p class="pr-lg-4">Tuk Tuk is largest operator of Local Auto rickshaw rentals in Kerala.
+We offer good quality Rikshaws & drivers managed by 24×7 with online booking. </p>
+                  <div class="columns-2">
+                    <ul class="social">
+                      <li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#github"><span class="fa fa-github" aria-hidden="true"></span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 sub-one-left">
+                  <h6>Our Services</h6>
+    <div class="mid-footer-gd sub-two-right">
+
+                    <ul>
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span> About</a>
+                      </li>
+                
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span>Help
+                          </a>
+                      </li>
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span>Career</a></li>
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span>Contact US</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 sub-one-left">
+                  <h6>Contact Info</h6>
+                  <div class="sub-contact-info">
+                    <p>Address: Alappuzha, Kerala, India.</p>
+                    <p class="my-3">Phone: <strong><a href="tel:+916238141438">+91 6238141438</a></strong></p>
+                    <p>E-mail:<strong> <a href="mailto:autobros@gmail.com.com">tuktukmallu@gmail.com</a></strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="below-section">
+        <div class="container">
+          <div class="copyright-footer">
+            <div class="columns text-lg-left">
+              <p>© 2023 TukTuk. All rights reserved | Powered by <a href="#">Adithyan</a></p>
+            </div>
+            <ul class="columns text-lg-right">
+              <li><a href="#">Privacy Policy</a>
+              </li>
+              <li>|</li>
+              <li><a href="#">Terms Of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <!-- move top -->
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-long-arrow-up" aria-hidden="true"></span>
+      </button>
+      <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction()
+        };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+          } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <!-- /move top -->
+
+    </section>
+  </footer>
+   <script src="/javascripts/jquery-3.3.1.min.js"></script>
+  <script src="/javascripts/theme-change.js"></script>
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+
+  <script src="/javascripts/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

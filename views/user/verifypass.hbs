@@ -1,0 +1,389 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Car Serving a Auto Mobile Category Category Bootstrap Responsive Template | Services :: W3layouts</title>
+  <!-- Template CSS -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  {{!--
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="stylesheets/style-starter.css">
+</head>
+
+<body>
+
+  <!--/header-->
+  <!-- about breadcrumb -->
+  <section class="w3l-about-breadcrumb position-relative text-center">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+      <div class="container py-lg-5 py-3">
+        <h2 class="title">OTP </h2>
+        <ul class="breadcrumbs-custom-path mt-2">
+          <li><a href="#url">Home</a></li>
+          <li class="active"><span class="fa fa-angle-double-right mx-2" aria-hidden="true"></span>Verification</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="login">
+    <div class="login_box ">
+      <div class="left">
+        {{!-- <div class="top_link"><a href="/"><img
+              src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Return
+            Home</a></div> --}}
+        <div class="contact">
+          <form action="/verify-otp-pass" method="post">
+            <h3>OTP VERIFICATION</h3>
+            <p>Enter the OTP We Sent to Your Email : {{email}} <br>To Verify Your Email Address</p>
+            {{#if error}}
+            <p class="error" style="color: rgb(197, 15, 12);">{{error}}</p>
+            {{/if}}
+
+            <input type="text" name="otp" required="" inputmode="numeric" placeholder="Enter OTP">
+            <input type="text" hidden name="Email" value="{{email}}" required="">
+            <input type="text" hidden name="Pass" value="{{userData.Pass}}" required="">
+            {{!-- <input type="text" hidden name="Name" value="{{userData.Name}}" required="">
+            <input type="text" hidden name="Phone" value="{{userData.Phone}}" required="">
+            <input type="text" hidden name="Address" value="{{userData.Address}}" required="">
+            <input type="text" hidden name="Pincode" value="{{userData.Pincode}}" required="">
+            <input type="text" hidden name="Pass" value="{{userData.Pass}}" required=""> --}}
+            <p class="d">Didn't Receive OTP? <a class="resend-otp-pass">Resend OTP</a></p>
+
+            <button type="submit" class="submit">Verify</button>
+          </form>
+
+
+
+        </div>
+      </div>
+
+
+
+      <script>
+        $(document).ready(function ($) {
+          $(".resend-otp-pass").on("click", function () {
+            // Get the email from the hidden input field
+            const email = $("input[name='Email']").val();
+
+            // Send an AJAX request to resend OTP
+            $.ajax({
+              type: "POST",
+              url: "/resend-otp-pass",
+              data: { Email: email },
+              success: function (response) {
+                alert(response.message); // Show a success message
+              },
+              error: function (error) {
+                alert(error.responseJSON.error); // Show an error message
+              },
+            });
+          });
+        });
+      </script>
+
+      <div class="right">
+        <div class="right-text">
+          {{!-- <h2 class="text-danger">Auto Bros</h2> --}}
+          {{!-- <h5>A UX BASED CREATIVE AGENCEY</h5> --}}
+        </div>
+        <div class="right-inductor"><img src="" alt=""></div>
+      </div>
+    </div>
+  </section>
+  <style>
+    img {
+      width: 100%;
+    }
+
+    .login {
+      height: 800px;
+      width: 100%;
+      background: rgb(225, 224, 224);
+      position: relative;
+    }
+
+    .login_box {
+      margin-left: 2%;
+
+      width: 75%;
+      height: 500px;
+      position: absolute;
+      top: 50%;
+      left: 47%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 1px 4px 22px -8px #0004;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .login_box .left {
+      width: 100%;
+      height: 100%;
+      padding: 25px 25px;
+
+    }
+
+
+    .left .top_link a {
+      color: #452A5A;
+      font-weight: 300;
+    }
+
+    .left .top_link {
+      height: 20px
+    }
+
+    .left .contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      height: 100%;
+      width: 70%;
+      margin: auto;
+    }
+
+    .left h3 {
+      text-align: center;
+      margin-bottom: 40px;
+      fon
+    }
+
+    .left input {
+      border: none;
+      width: 80%;
+      margin: 15px 0px;
+      margin-top: 20px;
+      border-bottom: 2px solid #4f30677d;
+      padding: 0px 0px;
+      width: 100%;
+      overflow: hidden;
+      background: transparent;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .left {
+      background: linear-gradient(-45deg, #dcd7e0, #fff);
+    }
+
+    .submit {
+      border: none;
+      padding: 15px 40px;
+      border-radius: 8px;
+      display: block;
+      margin: auto;
+      margin-top: 50px;
+      background: rgb(209, 39, 9);
+      color: #ffffff;
+      font-weight: bold;
+      -webkit-box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+      -moz-box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+      box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+    }
+
+    .left p {
+      color: #333;
+      font-size: 0.9em;
+      margin-left: 5px;
+    }
+
+    .left .contact .d {
+      color: #333;
+      font-size: 0.9em;
+      margin-left: 0px;
+    }
+
+    .left .contact .resend-otp {
+      color: #333;
+      font-size: 1.2em;
+      margin-left: 0px;
+      text-decoration: none;
+    }
+
+
+
+
+
+    .top_link img {
+      width: 28px;
+      padding-right: 7px;
+      margin-top: -3px;
+    }
+  </style>
+
+
+
+
+
+ <footer class="w3l-footer-66">
+    <section class="footer-inner-main">
+      <div class="footer-hny-grids py-5">
+        <div class="container py-lg-4">
+          <div class="text-txt">
+            <div class="right-side">
+              <div class="row sub-columns">
+                <div class="col-lg-4 col-md-6 sub-one-left pr-lg-4">
+                  <h2><a class="navbar-brand" href="index.html">
+                    <span>T</span>uk<span>T</span>uk
+                  </a></h2>
+                  <!-- if logo is image enable this   
+										<a class="navbar-brand" href="#index.html">
+											<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+										</a> -->
+                  <p class="pr-lg-4">We are here to Provide Auto Service For Your Needs at your Fingertips. </p>
+                  <div class="columns-2">
+                    <ul class="social">
+                      <li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#github"><span class="fa fa-github" aria-hidden="true"></span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 sub-one-left">
+                  <h6>Our Services</h6>
+    <div class="mid-footer-gd sub-two-right">
+
+                    <ul>
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span> About</a>
+                      </li>
+                
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span>Help
+                          </a>
+                      </li>
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span>Career</a></li>
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span>Contact US</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 sub-one-left">
+                  <h6>Contact Info</h6>
+                  <div class="sub-contact-info">
+                    <p>Address: Alappuzha, Kerala, India.</p>
+                    <p class="my-3">Phone: <strong><a href="tel:+916238141438">+91 6238141438</a></strong></p>
+                    <p>E-mail:<strong> <a href="mailto:autobros@gmail.com.com">tuktukmallu@gmail.com</a></strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="below-section">
+        <div class="container">
+          <div class="copyright-footer">
+            <div class="columns text-lg-left">
+              <p>© 2023 AutoBros. All rights reserved | Powered by <a href="#">Adithyan</a></p>
+            </div>
+            <ul class="columns text-lg-right">
+              <li><a href="#">Privacy Policy</a>
+              </li>
+              <li>|</li>
+              <li><a href="#">Terms Of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <!-- move top -->
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-long-arrow-up" aria-hidden="true"></span>
+      </button>
+      <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction()
+        };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+          } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <!-- /move top -->
+
+    </section>
+  </footer>
+  <script src="/javascripts/jquery-3.3.1.min.js"></script>
+  <script src="/javascripts/theme-change.js"></script>
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+
+  <script src="/javascripts/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

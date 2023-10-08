@@ -1,0 +1,508 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Car Serving a Auto Mobile Category Category Bootstrap Responsive Template | Services :: W3layouts</title>
+  <!-- Template CSS -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <!-- Template CSS -->
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="/stylesheets/style-starter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+  <!--/header-->
+  <!-- about breadcrumb -->
+  <section class="w3l-about-breadcrumb position-relative text-center">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+      <div class="container py-lg-5 py-3">
+        <h2 class="title">Signup</h2>
+        <ul class="breadcrumbs-custom-path mt-2">
+          <li><a href="#url">Home</a></li>
+          <li class="active"><span class="fa fa-angle-double-right mx-2" aria-hidden="true"></span>Signup</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="login">
+    <div class="login_box">
+      <div class="left">
+        <div class="top_link"><a href="/">
+            <img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download"
+              alt="">Return home</a></div>
+
+        <div class="contact">
+          <form action="/signup" method="post">
+            <h3>SIGN UP</h3>
+            {{#if error}}
+            <p>{{error}}</p>
+            {{/if}}
+            <input type="text" name="Name" required="" placeholder="Full Name">
+            <input type="Email" name="Email" required="" placeholder="Email">
+            <input type="text" name="Phone" required="" placeholder="Phone">
+            <input type="text" name="Address" required="" placeholder="Address">
+            <input type="text" name="Pincode" required="" placeholder="Pinocde">
+            {{!-- <input type="text" name="Pass" required="" placeholder="Password"> --}}
+            <div class="wrapper">
+              <div class="pass-field">
+                
+                <input type="password" name="Pass" required="" placeholder="Create password">
+                <i class="fa-solid fa-eye"></i>
+              </div> 
+              <div class="content">
+                <p>Password must contains</p>
+                <ul class="requirement-list">
+                  <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 8 characters length</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 1 number (0...9)</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 1 lowercase letter (a...z)</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 1 special symbol (!...$)</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 1 uppercase letter (A...Z)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="/login" class="mt-1">Already have an Account?</a>
+            <button type="submit" class="submit">Request OTP</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <style>
+    img {
+      width: 100%;
+    }
+
+    .login {
+      height: 1200px;
+      width: 99%;
+      background: rgb(225, 224, 224);
+      position: relative;
+    }
+
+    .login_box {
+      margin-left: 1%;
+      width: 78%;
+      height: 80%;
+      position: absolute;
+      top: 50%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 1px 4px 22px -8px #0004;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .login_box .left {
+      width: 100%;
+      height: 100%;
+      padding: 25px 25px;
+
+    }
+
+    .left .top_link a {
+      color: #452A5A;
+      font-weight: 400;
+    }
+
+    .left .top_link {
+      height: 20px
+    }
+
+    .left .contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    .left h3 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .left input {
+      border: none;
+      width: 80%;
+      margin: 15px 0px;
+      border-bottom: 1px solid #4f30677d;
+      padding: 7px 9px;
+      width: 100%;
+      overflow: hidden;
+      background: transparent;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .left {
+      background: linear-gradient(-45deg, #dcd7e0, #fff);
+    }
+
+    .submit {
+      border: none;
+      padding: 15px 70px;
+      border-radius: 8px;
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      background: #b91802;
+      color: #fff;
+      font-weight: bold;
+      -webkit-box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+      -moz-box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+      box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+    }
+
+    .top_link img {
+      width: 28px;
+      padding-right: 7px;
+      margin-top: -3px;
+    }
+  </style>
+  <style>
+    /* Import Google font - Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .wrapper {
+      width: 100%;
+      overflow: hidden;
+
+    }
+
+    .wrapper .pass-field {
+      height: 50px;
+      width: 100%;
+      position: relative;
+    }
+
+    .pass-field input {
+      width: 100%;
+      height: 80%;
+      position: relative;
+      outline: none;
+      padding: 0 0px;
+      font-size: 0.9rem;
+
+    }
+
+    .pass-field i {
+      right: 10px;
+      top: 50%;
+      font-size: 1.0rem;
+      color: #999;
+      cursor: pointer;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+
+    .wrapper .content {
+      margin: 20px 0 10px;
+    }
+
+    .content p {
+      color: #333;
+      font-size: 1.2rem;
+      margin-left: 5px;
+    }
+
+    .content .requirement-list {
+      margin-top: 20px;
+    }
+
+    .requirement-list li {
+      font-size: 0.9rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .requirement-list li i {
+      width: 20px;
+      color: #aaa;
+      margin-left: 5px;
+      font-size: 0.5rem;
+    }
+
+    .requirement-list li.valid i {
+      font-size: 0.9rem;
+      color: #c70808;
+    }
+
+    .requirement-list li span {
+      margin-left: 12px;
+      color: #333;
+    }
+
+    .requirement-list li.valid span {
+      color: #999;
+    }
+
+    @media screen and (max-width: 500px) {
+
+      body,
+      .wrapper {
+        padding: 5px;
+      }
+
+      .wrapper .pass-field {
+        height: 50px;
+      }
+
+      .pass-field input,
+      .content p {
+        font-size: 0.8rem;
+        
+      }
+
+      .pass-field i,
+      .requirement-list li {
+        font-size: 0.8rem;
+      }
+
+      .requirement-list li span {
+        margin-left: 3px;
+      }
+    }
+  </style>
+  <script>
+    const passwordInput = document.querySelector(".pass-field input");
+    const eyeIcon = document.querySelector(".pass-field i");
+    const requirementList = document.querySelectorAll(".requirement-list li");
+
+    // An array of password requirements with corresponding 
+    // regular expressions and index of the requirement list item
+    const requirements = [
+      { regex: /.{8,}/, index: 0 }, // Minimum of 8 characters
+      { regex: /[0-9]/, index: 1 }, // At least one number
+      { regex: /[a-z]/, index: 2 }, // At least one lowercase letter
+      { regex: /[^A-Za-z0-9]/, index: 3 }, // At least one special character
+      { regex: /[A-Z]/, index: 4 }, // At least one uppercase letter
+    ]
+
+    passwordInput.addEventListener("keyup", (e) => {
+      requirements.forEach(item => {
+        // Check if the password matches the requirement regex
+        const isValid = item.regex.test(e.target.value);
+        const requirementItem = requirementList[item.index];
+
+        // Updating class and icon of requirement item if requirement matched or not
+        if (isValid) {
+          requirementItem.classList.add("valid");
+          requirementItem.firstElementChild.className = "fa-solid fa-check";
+        } else {
+          requirementItem.classList.remove("valid");
+          requirementItem.firstElementChild.className = "fa-solid fa-circle";
+        }
+      });
+    });
+
+    eyeIcon.addEventListener("click", () => {
+      // Toggle the password input type between "password" and "text"
+      passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+
+      // Update the eye icon class based on the password input type
+      eyeIcon.className = `fa-solid fa-eye${passwordInput.type === "password" ? "" : "-slash"}`;
+    });
+  </script>
+
+
+
+<footer class="w3l-footer-66">
+    <section class="footer-inner-main">
+      <div class="footer-hny-grids py-5">
+        <div class="container py-lg-4">
+          <div class="text-txt">
+            <div class="right-side">
+              <div class="row sub-columns">
+                <div class="col-lg-4 col-md-6 sub-one-left pr-lg-4">
+                  <h2><a class="navbar-brand" href="index.html">
+                    <span>T</span>uk<span>T</span>uk
+                  </a></h2>
+                  <!-- if logo is image enable this   
+										<a class="navbar-brand" href="#index.html">
+											<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+										</a> -->
+                  <p class="pr-lg-4">Tuk Tuk is largest operator of Local Auto rickshaw rentals in Kerala.
+We offer good quality Rikshaws & drivers managed by 24×7 with online booking. </p>
+                  {{!-- <div class="columns-2">
+                    <ul class="social">
+                      <li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+                      </li>
+                      <li><a href="#github"><span class="fa fa-github" aria-hidden="true"></span></a>
+                      </li>
+                    </ul>
+                  </div> --}}
+                </div>
+                <div class="col-lg-4 col-md-6 sub-one-left">
+                  <h6>Our Services</h6>
+    <div class="mid-footer-gd sub-two-right">
+
+                    <ul>
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span> About</a>
+                      </li>
+                
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span>Help
+                          </a>
+                      </li>
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span>Career</a></li>
+                      <li><a href="/contact"><span class="fa fa-angle-double-right mr-2"></span>Contact US</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 sub-one-left">
+                  <h6>Contact Info</h6>
+                  <div class="sub-contact-info">
+                    <p>Address: Alappuzha, Kerala, India.</p>
+                    <p class="my-3">Phone: <strong><a href="tel:+916238141438">+91 6238141438</a></strong></p>
+                    <p>E-mail:<strong> <a href="mailto:autobros@gmail.com.com">tuktukmallu@gmail.com</a></strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="below-section">
+        <div class="container">
+          <div class="copyright-footer">
+            <div class="columns text-lg-left">
+              <p>© 2023 TukTuk. All rights reserved | Powered by <a href="#">Adithyan</a></p>
+            </div>
+            <ul class="columns text-lg-right">
+              <li><a href="#">Privacy Policy</a>
+              </li>
+              <li>|</li>
+              <li><a href="#">Terms Of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <!-- move top -->
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-long-arrow-up" aria-hidden="true"></span>
+      </button>
+      <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction()
+        };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+          } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <!-- /move top -->
+
+    </section>
+  </footer>
+  <script src="/javascripts/jquery-3.3.1.min.js"></script>
+  <script src="/javascripts/theme-change.js"></script>
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+
+  <script src="/javascripts/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
